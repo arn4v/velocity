@@ -1,5 +1,7 @@
 {
-  "private": true,
+  "name": "velocity",
+  "license": "MIT",
+  "author": "Arnav Gosain <arnav@arnavgosain.com> (https://arnavgosain.com)",
   "scripts": {
     "next:dev": "next dev",
     "start:ci": "yarn db:migrate:deploy && yarn start",
