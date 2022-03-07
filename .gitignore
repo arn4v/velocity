@@ -8,30 +8,31 @@
 # testing
 /coverage
 
-# next.js
-/.next/
-/out/
-
 # production
 /build
 
 # misc
 .DS_Store
-*.pem
+.env
+.env.local
+.env.*.local
 
-# debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# local env files
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.eslintcache.next
+.next
+.eslintcache
+.husky
 
-# vercel
-.vercel
+/*.sqlite
+**/public/workbox-*.js
+**/public/sw.js
+**/public/worker-*.js
 
-# typescript
-*.tsbuildinfo
+sentry.properties
+uploads/
+/*.sql
+.vscode
+/debug.log
