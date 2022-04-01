@@ -1,6 +1,6 @@
 import superjson from "superjson";
-import { trpcAuthMiddleware } from "../auth-middleware";
-import { createRouter } from "../create-router";
+import { trpcAuthMiddleware } from "../middlewares/auth";
+import { createRouter } from "../create_router";
 
 export const appRouter = createRouter()
 	.transformer(superjson)

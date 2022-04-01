@@ -24,16 +24,8 @@ export const createContext = async ({
 
 		const auth0user = session?.user as UserProfile;
 
-		const user = await prisma.user.upsert({
+		const user = await prisma.user.findUnique({
 			where: { email: auth0user?.email as string },
-			create: {
-				auth0Id: auth0user?.sub,
-				name: auth0user?.name as string,
-				email: auth0user?.email as string,
-			},
-			update: {
-				auth0Id: session?.user?.sub,
-			},
 		});
 
 		if (user) {

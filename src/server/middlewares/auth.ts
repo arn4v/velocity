@@ -1,6 +1,6 @@
 import { TRPCError } from "@trpc/server";
 import { MiddlewareFunction } from "@trpc/server/dist/declarations/src/internals/middlewares";
-import { TrpcContext } from "./create-context";
+import { TrpcContext } from "../create_context";
 
 export const trpcAuthMiddleware: MiddlewareFunction<
 	TrpcContext,
